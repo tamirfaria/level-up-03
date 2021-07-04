@@ -15,11 +15,18 @@ class _SignInPageState extends State<SignInPage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 250),
+          padding: const EdgeInsets.only(top: 150),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              const Text(
+                "Entrar",
+                style: TextStyle(
+                  fontSize: 36,
+                ),
+              ),
+              const SizedBox(height: 100.0),
               const Padding(
                 padding: EdgeInsets.only(
                   left: 24.0,
