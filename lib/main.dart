@@ -1,16 +1,4 @@
 import 'package:flutter/material.dart';
+import 'package:level_up_03/app_widget.dart';
 
-void main() => runApp(const MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'LevelUp #3',
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(),
-    );
-  }
-}
+void main() => runApp(const AppWidget());
