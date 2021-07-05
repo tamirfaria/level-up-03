@@ -20,7 +20,7 @@ class _SignInPageState extends State<SignInPage> {
             child: Form(
               key: _formKey,
               child: Padding(
-                padding: const EdgeInsets.only(top: 150),
+                padding: const EdgeInsets.only(top: 100),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -88,8 +88,12 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                     const SizedBox(height: 64.0),
                     const Padding(
-                      padding: EdgeInsets.only(top: 16.0, bottom: 32),
+                      padding: EdgeInsets.only(top: 16.0, bottom: 4),
                       child: Text("Não possui uma conta? | Cadastre-se"),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 32),
+                      child: Text("Esqueceu seu senha? | Resetar senha"),
                     ),
                     Center(
                       child: GoogleButton(onTap: () {}),
@@ -98,6 +102,7 @@ class _SignInPageState extends State<SignInPage> {
                     Center(
                       child: TwitterButton(onTap: () {}),
                     ),
+                    const SizedBox(height: 24),
                   ],
                 ),
               ),
